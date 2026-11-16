@@ -1,0 +1,724 @@
+:root {
+    --obsidian: #090807;
+    --lapis-deep: #0f131f;
+    --alabaster: #faf8f4;
+    --gold-dark: #7a5212;
+    --gold-mid: #c59638;
+    --gold-bright: #f3d47a;
+    --gold-cream: #fff6d6;
+    --gold-24k: linear-gradient(135deg, #8c6014 0%, #f5d67b 32%, #b58224 55%, #fff2c2 80%, #8c6014 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--obsidian);
+    color: #f4efe6;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+
+#celestialCanvas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 40;
+}
+
+/* Floating Glass Header */
+nav {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    max-width: 960px;
+    background: rgba(12, 14, 22, 0.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(243, 212, 122, 0.35);
+    border-radius: 50px;
+    padding: 0.7rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+.nav-emblem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 2.5px;
+    color: var(--gold-bright);
+}
+
+.nav-btn {
+    background: var(--gold-24k);
+    color: #120e08;
+    border: none;
+    padding: 0.45rem 1.1rem;
+    border-radius: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* CELESTIAL ASTROLABE HERO */
+header {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6.5rem 1.4rem 4.5rem;
+    background: radial-gradient(ellipse at 50% 25%, #231e18 0%, #0d1019 58%, #070605 100%);
+    overflow: hidden;
+}
+
+/* Rotating Sacred Geometry Rings */
+.sacred-geometry-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(243, 212, 122, 0.16);
+    pointer-events: none;
+}
+
+.ring-1 {
+    width: 340px;
+    height: 340px;
+    top: 11%;
+    border-style: dashed;
+    animation: rotateSlow 45s linear infinite;
+}
+
+.ring-2 {
+    width: 480px;
+    height: 480px;
+    top: 4%;
+    border: 1px solid rgba(243, 212, 122, 0.1);
+    animation: rotateSlow 70s linear infinite reverse;
+}
+
+@keyframes rotateSlow {
+    to { transform: rotate(360deg); }
+}
+
+.celestial-aura {
+    position: absolute;
+    top: 8%;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(243, 212, 122, 0.22) 0%, transparent 70%);
+    filter: blur(25px);
+    pointer-events: none;
+}
+
+/* 3D Crest Medallion */
+.crest-orbit {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+
+.crest-gold-bezel {
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+    padding: 7px;
+    background: var(--gold-24k);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.85), 0 0 40px rgba(243, 212, 122, 0.28);
+}
+
+.crest-marble-core {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffffff 45%, #ebe4d5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#customLogoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.default-seal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.royal-crown {
+    font-size: 4rem;
+    line-height: 1;
+    background: var(--gold-24k);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.royal-motto {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.56rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--gold-dark);
+    margin-top: 0.35rem;
+}
+
+.crest-upload {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1.4rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    color: var(--gold-bright);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(243, 212, 122, 0.4);
+    padding: 0.4rem 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.hero-titles {
+    position: relative;
+    z-index: 2;
+}
+
+.kicker-top {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.72rem;
+    letter-spacing: 4.5px;
+    color: var(--gold-bright);
+    margin-bottom: 0.3rem;
+}
+
+.liquid-gold-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 10vw, 5.4rem);
+    font-weight: 900;
+    letter-spacing: 6px;
+    line-height: 1.05;
+    background: linear-gradient(110deg, #b88428 15%, #f7dc88 35%, #ffffff 50%, #d4a23e 65%, #9e6e1b 85%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldFlow 4.5s linear infinite;
+}
+
+@keyframes goldFlow {
+    to { background-position: 200% center; }
+}
+
+.providence-sub {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 3.5vw, 1.85rem);
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: #ffffff;
+    margin-top: 0.25rem;
+}
+
+.authority-crest {
+    display: inline-block;
+    margin: 1.1rem 0 1.3rem;
+    padding: 0.5rem 1.4rem;
+    border-top: 1px solid rgba(243, 212, 122, 0.5);
+    border-bottom: 1px solid rgba(243, 212, 122, 0.5);
+    font-family: 'Playfair Display', serif;
+    font-size: 0.78rem;
+    letter-spacing: 4px;
+    color: var(--gold-bright);
+    background: rgba(243, 212, 122, 0.08);
+}
+
+.hero-scripture {
+    position: relative;
+    z-index: 2;
+    font-style: italic;
+    font-size: 1.22rem;
+    color: #dcd4c6;
+    max-width: 540px;
+    margin: 0 auto 2rem;
+}
+
+.hero-scripture span {
+    display: block;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    color: var(--gold-bright);
+    margin-top: 0.5rem;
+}
+
+.hero-cta-group {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    justify-content: center;
+}
+
+.btn-24k {
+    padding: 0.95rem 2.1rem;
+    background: var(--gold-24k);
+    color: #120e08;
+    border: 1px solid #fff2c2;
+    border-radius: 4px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba(197, 150, 56, 0.38);
+}
+
+.btn-alabaster {
+    padding: 0.95rem 2.1rem;
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--gold-bright);
+    border: 1px solid rgba(243, 212, 122, 0.45);
+    border-radius: 4px;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* ALABASTER PALACE CHAMBERS */
+.alabaster-palace {
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(185, 178, 165, 0.25) 0%, transparent 45%),
+        linear-gradient(135deg, #ffffff 0%, #f1eee7 50%, #fcfbf8 100%);
+    color: #1a1714;
+    padding: 5.5rem 1.4rem;
+}
+
+.palace-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 2.5rem;
+}
+
+.section-tag {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.74rem;
+    letter-spacing: 4px;
+    color: var(--gold-dark);
+}
+
+.palace-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.9rem, 5vw, 2.8rem);
+    font-weight: 700;
+    color: #12100d;
+    margin: 0.3rem 0 0.7rem;
+}
+
+.palace-header p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #575046;
+}
+
+/* Chamber Selector Tabs */
+.chamber-selector {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 2.2rem;
+}
+
+.chamber-tab {
+    flex: 1;
+    max-width: 150px;
+    padding: 0.9rem 0.6rem;
+    background: #ffffff;
+    border: 1px solid rgba(197, 150, 56, 0.45);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.chamber-tab .tab-roman {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    color: var(--gold-dark);
+    letter-spacing: 2px;
+}
+
+.chamber-tab .tab-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1714;
+}
+
+.chamber-tab.active {
+    background: var(--lapis-deep);
+    border-color: var(--gold-bright);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(15, 19, 31, 0.28);
+}
+
+.chamber-tab.active .tab-roman,
+.chamber-tab.active .tab-name {
+    color: var(--gold-bright);
+}
+
+/* Chamber View Card */
+.chamber-stage {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.chamber-view {
+    display: none;
+    background: #ffffff;
+    border: 1.5px solid var(--gold-mid);
+    border-radius: 14px;
+    padding: 2.8rem 2rem;
+    text-align: center;
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.1);
+    animation: riseIn 0.45s ease;
+}
+
+.chamber-view.active {
+    display: block;
+}
+
+@keyframes riseIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.chamber-ornament {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 0.9rem;
+    border-radius: 50%;
+    background: var(--gold-24k);
+    color: #120e08;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chamber-verse-tag {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    color: var(--gold-dark);
+}
+
+.chamber-view h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    color: #12100d;
+    margin: 0.4rem 0 1rem;
+}
+
+.chamber-quote {
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #464037;
+    margin-bottom: 1.8rem;
+}
+
+.chamber-pillars-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid rgba(197, 150, 56, 0.3);
+}
+
+.mini-pillar strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--gold-dark);
+}
+
+.mini-pillar span {
+    font-size: 0.92rem;
+    color: #635b4f;
+}
+
+/* ROYAL SCRIPTURE TREASURY VAULT */
+.treasury-vault {
+    padding: 5.5rem 1.4rem;
+    background: radial-gradient(circle at center, #1b2033 0%, #090807 100%);
+    text-align: center;
+    border-top: 2px solid var(--gold-mid);
+    border-bottom: 2px solid var(--gold-mid);
+}
+
+.vault-frame {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.8rem;
+    border: 1px solid rgba(243, 212, 122, 0.4);
+    border-radius: 14px;
+    background: rgba(10, 12, 18, 0.75);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75);
+}
+
+.vault-kicker {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.74rem;
+    letter-spacing: 4px;
+    color: var(--gold-bright);
+}
+
+.vault-frame h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    color: #ffffff;
+    margin: 0.3rem 0 0.5rem;
+}
+
+.vault-sub {
+    font-style: italic;
+    color: #cfc6b6;
+    margin-bottom: 1.8rem;
+}
+
+.oracle-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(243, 212, 122, 0.35);
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.8rem;
+    transition: opacity 0.25s ease;
+}
+
+.oracle-card p {
+    font-style: italic;
+    font-size: clamp(1.3rem, 3.5vw, 1.85rem);
+    color: var(--gold-cream);
+    margin-bottom: 0.8rem;
+}
+
+.oracle-card span {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: var(--gold-bright);
+}
+
+/* FOOTER */
+footer {
+    background: #070605;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+}
+
+.footer-crown {
+    font-size: 1.9rem;
+    color: var(--gold-bright);
+    margin-bottom: 0.4rem;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    letter-spacing: 3px;
+    color: var(--gold-bright);
+}
+
+.footer-line {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: #968d7e;
+    margin-top: 0.4rem;
+}
+
+/* MODAL */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(7, 6, 5, 0.88);
+    backdrop-filter: blur(10px);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal-panel {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    background: #121521;
+    border: 1px solid var(--gold-bright);
+    border-radius: 14px;
+    padding: 2.5rem 1.8rem;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: var(--gold-bright);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modal-crown {
+    font-size: 2rem;
+    color: var(--gold-bright);
+    margin-bottom: 0.4rem;
+}
+
+.modal-panel h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--gold-bright);
+    margin-bottom: 0.4rem;
+}
+
+.modal-panel p {
+    font-style: italic;
+    color: #d6cec0;
+    margin-bottom: 1.4rem;
+}
+
+.modal-panel input,
+.modal-panel textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.9rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(243, 212, 122, 0.35);
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+}
+
+.court-success {
+    display: none;
+    color: var(--gold-bright);
+    font-family: 'Playfair Display', serif;
+    padding: 1rem 0;}
+/* === SEAMLESS BANNER HERO OVERRIDE === */
+.banner-hero {
+    padding-top: 5.5rem;
+    background: radial-gradient(ellipse at 50% 30%, #1a1712 0%, #090807 70%);
+}
+
+.banner-frame {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 1.2rem;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(243, 212, 122, 0.35);
+    /* Soft edge fade so it melts into the dark hero */
+    -webkit-mask-image: radial-gradient(ellipse 96% 94% at 50% 50%, #000 78%, transparent 100%);
+    mask-image: radial-gradient(ellipse 96% 94% at 50% 50%, #000 78%, transparent 100%);
+}
+
+#customLogoImg {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 0;
+}
+
+.banner-placeholder {
+    padding: 3.5rem 1.5rem;
+    background: linear-gradient(145deg, #161822, #0b0a08);
+    text-align: center;
+}
+
+.placeholder-crown {
+    font-size: 3rem;
+    color: var(--gold-bright);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.banner-placeholder p {
+    font-style: italic;
+    color: #cfc6b6;
+}
+
+.house-plaque {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+
+.providence-main {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 7vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(110deg, #b88428 15%, #f7dc88 35%, #ffffff 50%, #d4a23e 65%, #9e6e1b 85%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldFlow 4.5s linear infinite;
+}
+.banner-frame {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 45%, transparent 95%) !important;
+    mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 45%, transparent 95%) !important;
+}
+
+.banner-hero {
+    background: #060606 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
