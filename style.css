@@ -93,7 +93,6 @@ header {
     overflow: hidden;
 }
 
-/* Rotating Sacred Geometry Rings */
 .sacred-geometry-ring {
     position: absolute;
     border-radius: 50%;
@@ -130,7 +129,6 @@ header {
     filter: blur(25px);
     pointer-events: none;
 }
-
 /* 3D Crest Medallion */
 .crest-orbit {
     position: relative;
@@ -313,6 +311,7 @@ header {
     text-transform: uppercase;
     cursor: pointer;
 }
+
 /* ALABASTER PALACE CHAMBERS */
 .alabaster-palace {
     background: 
@@ -348,7 +347,6 @@ header {
     font-size: 1.2rem;
     color: #575046;
 }
-
 /* Chamber Selector Tabs */
 .chamber-selector {
     display: flex;
@@ -567,7 +565,6 @@ footer h3 {
     color: #968d7e;
     margin-top: 0.4rem;
 }
-
 /* MODAL */
 .modal-overlay {
     display: none;
@@ -649,46 +646,23 @@ footer h3 {
 /* === SEAMLESS BANNER HERO OVERRIDE === */
 .banner-hero {
     padding-top: 5.5rem;
-    background: radial-gradient(ellipse at 50% 30%, #1a1712 0%, #090807 70%);
+    background: #060606 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .banner-frame {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 760px;
+    max-width: 100% !important;
     margin: 0 auto 1.2rem;
-    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
-    border: 1px solid rgba(243, 212, 122, 0.35);
-    -webkit-mask-image: radial-gradient(ellipse 96% 94% at 50% 50%, #000 78%, transparent 100%);
-    mask-image: radial-gradient(ellipse 96% 94% at 50% 50%, #000 78%, transparent 100%);
-}
-
-#customLogoImg {
-    width: 100%;
-    height: auto;
-    display: none;
-    border-radius: 0;
-}
-
-.banner-placeholder {
-    padding: 3.5rem 1.5rem;
-    background: linear-gradient(145deg, #161822, #0b0a08);
-    text-align: center;
-}
-
-.placeholder-crown {
-    font-size: 3rem;
-    color: var(--gold-bright);
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.banner-placeholder p {
-    font-style: italic;
-    color: #cfc6b6;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 45%, transparent 95%) !important;
+    mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 45%, transparent 95%) !important;
 }
 
 .house-plaque {
@@ -710,17 +684,114 @@ footer h3 {
     animation: goldFlow 4.5s linear infinite;
 }
 
-.banner-frame {
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    max-width: 100% !important;
-    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 45%, transparent 95%) !important;
-    mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 45%, transparent 95%) !important;
+/* === BANK-READY OVERVIEW & 12 SECTORS ADD-ON === */
+.overview-card {
+    background: #ffffff;
+    border: 1.5px solid var(--gold-mid);
+    border-radius: 14px;
+    padding: 2.6rem 2rem;
+    text-align: center;
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.1);
 }
 
-.banner-hero {
-    background: #060606 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+.overview-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    color: #12100d;
+    margin: 0.3rem 0 1.4rem;
+}
+
+.chamber-pillars-row.three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.overview-card .mini-pillar {
+    background: #faf8f4;
+    border: 1px solid rgba(197, 150, 56, 0.35);
+    border-radius: 10px;
+    padding: 1.2rem 1rem;
+}
+
+.how-it-works-box {
+    margin-top: 2rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid rgba(197, 150, 56, 0.35);
+}
+
+.steps-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.9rem;
+    margin-top: 1.2rem;
+    text-align: left;
+}
+
+.step-item {
+    background: var(--lapis-deep);
+    border: 1px solid rgba(243, 212, 122, 0.4);
+    border-radius: 10px;
+    padding: 1.15rem 1rem;
+}
+
+.step-item strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.92rem;
+    letter-spacing: 1px;
+    color: var(--gold-bright);
+    margin-bottom: 0.35rem;
+}
+
+.step-item span {
+    font-size: 0.94rem;
+    color: #dcd4c6;
+    line-height: 1.45;
+    display: block;
+}
+
+.sector-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: left;
+    margin-top: 1.2rem;
+}
+
+.sector-item {
+    background: #faf8f4;
+    border-left: 3px solid var(--gold-mid);
+    padding: 0.85rem 1.1rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.05rem;
+    color: #2b2620;
+}
+
+.sector-item strong {
+    color: var(--gold-dark);
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+}
+
+.footer-compliance {
+    max-width: 680px;
+    margin: 0.9rem auto 0;
+    font-size: 0.88rem;
+    color: #8c8374;
+    line-height: 1.5;
+}
+
+@media (max-width: 780px) {
+    .steps-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .chamber-pillars-row.three-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .steps-row,
+    .chamber-pillars-row {
+        grid-template-columns: 1fr;
+    }
 }
