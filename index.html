@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dynasty: House of Providence | Heaven's Wealth Authority</title>
+    <title>The Dynasty: House of Providence | Kingdom Wealth & Community Empowerment</title>
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
@@ -13,18 +13,25 @@
 
     <canvas id="celestialCanvas"></canvas>
 
+    <!-- NAVIGATION -->
     <nav>
         <a href="#" class="nav-emblem">
             <span class="star-icon">✦</span>
             <span>HOUSE OF PROVIDENCE</span>
         </a>
-        <button class="nav-btn" onclick="openSanctuaryModal()">Enter Court</button>
+        <div class="nav-menu">
+            <a href="#overview">About</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#sectors">12 Sectors</a>
+            <a href="#chambers">Chambers</a>
+        </div>
+        <button class="nav-btn" onclick="openSanctuaryModal()">Apply / Connect</button>
     </nav>
 
-       <!-- SEAMLESS LUXURY BANNER HERO -->
+    <!-- LUXURY BANNER HERO -->
     <header class="banner-hero">
         <div class="banner-frame">
-            <img src="Banner.png.JPG" style="width:100%; height:auto; display:block;">
+            <img src="banner.jpg" alt="House of Providence Banner" style="width:100%; height:auto; display:block;">
         </div>
         <div class="house-plaque">
             <span class="kicker-top">BY WISDOM A HOUSE IS BUILT</span>
@@ -37,184 +44,127 @@
         </p>
 
         <div class="hero-cta-group">
-            <a href="#chambers" class="btn-24k">Enter The Three Chambers ↓</a>
-            <button class="btn-alabaster" onclick="openSanctuaryModal()">Request Audience</button>
+            <a href="#overview" class="btn-24k">Explore Our Mission ↓</a>
+            <button class="btn-alabaster" onclick="openSanctuaryModal()">Request Assistance</button>
         </div>
     </header>
-    <section id="chambers" class="alabaster-palace">
+
+        <!-- SECTION 1: WHAT IT IS & WHAT WE DO -->
+    <section id="overview" class="alabaster-palace">
         <div class="palace-header">
-            <span class="section-tag">PROVERBS 24:3–4</span>
-            <h2>The Three Chambers of Splendor</h2>
-            <p>“By wisdom a house is built, and through understanding it is established; through knowledge its rooms are filled with rare and beautiful treasures.”</p>
+            <span class="section-tag">WHO WE ARE &amp; WHAT WE DO</span>
+            <h2>Empowering Communities. Funding Dreams.</h2>
+            <p><strong>The Dynasty: House of Providence (Dynasty Wealth Systems)</strong> is a Christ-centered nonprofit organization dedicated to economic restoration and community revitalization. Serving as the hands and feet of Jesus, we remove financial barriers by providing <strong>free business education, mentorship, and direct grant and zero-interest micro-loan funding</strong> to help families and entrepreneurs launch and grow sustainable businesses.</p>
+        </div>
+
+        <div class="chamber-stage mission-card">
+            <span class="chamber-verse-tag">OUR CORE PILLARS</span>
+            <h3>Three Ways We Serve</h3>
+            <div class="chamber-pillars-row three-col">
+                <div class="mini-pillar">
+                    <strong>FREE EDUCATION</strong>
+                    <span>Zero-cost courses in business setup, budgeting, credit restoration, and financial stewardship.</span>
+                </div>
+                <div class="mini-pillar">
+                    <strong>HANDS-ON MENTORSHIP</strong>
+                    <span>1-on-1 coaching to help founders register entities, build budgets, and earn certification.</span>
+                </div>
+                <div class="mini-pillar">
+                    <strong>GRANTS &amp; 0% CAPITAL</strong>
+                    <span>Direct Launch Grants and zero-interest micro-loans to fund verified startup expenses.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: HOW IT WORKS (4-STEP PATHWAY & SUSTAINABLE MODEL) -->
+    <section id="how-it-works" class="treasury-vault">
+        <div class="vault-frame wide-vault">
+            <span class="vault-kicker">EDUCATION BEFORE ELEVATION</span>
+            <h2>How It Works</h2>
+            <p class="vault-sub">A transparent, self-sustaining cycle designed to equip founders and recycle capital back into the community.</p>
+
+            <div class="steps-grid">
+                <div class="step-box">
+                    <span class="step-num">STEP 01</span>
+                    <h4>Enroll &amp; Learn Free</h4>
+                    <p>Join at zero cost to access foundational business, credit, and stewardship training.</p>
+                </div>
+                <div class="step-box">
+                    <span class="step-num">STEP 02</span>
+                    <h4>Build Your Blueprint</h4>
+                    <p>Partner with a DWS coach to form your legal entity, build a budget, and earn certification.</p>
+                </div>
+                <div class="step-box">
+                    <span class="step-num">STEP 03</span>
+                    <h4>Receive Seed Capital</h4>
+                    <p>Unlock $5,000 Launch Grants / 0% Seed Micro-Loans and $10,000 Growth Funding.</p>
+                </div>
+                <div class="step-box">
+                    <span class="step-num">STEP 04</span>
+                    <h4>Recycle &amp; Multiply</h4>
+                    <p>Repaid 0% micro-loan principal recycles directly back into the fund to bless the next founder.</p>
+                </div>
+            </div>
+
+            <div class="funding-note">
+                <strong>How Our Programs Are Funded:</strong> Supported by philanthropic donations, foundation grants, corporate sponsorships, earned B2B educational licensing, and our self-replenishing 0% micro-loan pool.
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE 12 COMMUNITY & WEALTH SECTORS -->
+    <section id="sectors" class="alabaster-palace">
+        <div class="palace-header">
+            <span class="section-tag">360-DEGREE RESTORATION</span>
+            <h2>The 12 Community &amp; Wealth Sectors</h2>
+            <p>Select a pillar below to see how we support every area of business, financial health, and community life.</p>
         </div>
 
         <div class="chamber-selector">
-            <button class="chamber-tab active" onclick="openChamber(0, this)">
-                <span class="tab-roman">I</span>
-                <span class="tab-name">Wisdom</span>
+            <button class="chamber-tab active" onclick="openSector(0, this)">
+                <span class="tab-roman">PILLAR I</span>
+                <span class="tab-name">Financial &amp; Capital</span>
             </button>
-            <button class="chamber-tab" onclick="openChamber(1, this)">
-                <span class="tab-roman">II</span>
-                <span class="tab-name">Beauty</span>
+            <button class="chamber-tab" onclick="openSector(1, this)">
+                <span class="tab-roman">PILLAR II</span>
+                <span class="tab-name">Business Growth</span>
             </button>
-            <button class="chamber-tab" onclick="openChamber(2, this)">
-                <span class="tab-roman">III</span>
-                <span class="tab-name">Riches</span>
+            <button class="chamber-tab" onclick="openSector(2, this)">
+                <span class="tab-roman">PILLAR III</span>
+                <span class="tab-name">Youth &amp; Wellness</span>
             </button>
         </div>
 
         <div class="chamber-stage">
-            <div class="chamber-view active" id="chamber-0">
-                <div class="chamber-ornament">♛</div>
-                <span class="chamber-verse-tag">PROVERBS 3:13–16</span>
-                <h3>The Crown of Divine Wisdom</h3>
-                <p class="chamber-quote">“Blessed are those who find wisdom, those who gain understanding, for she is more profitable than silver and yields better returns than gold. Long life is in her right hand; in her left hand are riches and honor.”</p>
-                <div class="chamber-pillars-row">
-                    <div class="mini-pillar"><strong>DISCERNMENT</strong><span>Clarity before every move</span></div>
-                    <div class="mini-pillar"><strong>UNDERSTANDING</strong><span>Architecting lasting order</span></div>
+            <div class="sector-view chamber-view active" id="sector-0">
+                <h3>Financial Literacy &amp; Capital Access</h3>
+                <div class="sector-list">
+                    <div class="sector-item"><strong>1. Community Banking &amp; Capital:</strong> Safe wealth storage guidance and zero-barrier startup funding.</div>
+                    <div class="sector-item"><strong>2. Financial Education &amp; Protection:</strong> Budgeting, income protection, and retirement readiness.</div>
+                    <div class="sector-item"><strong>3. Capital Stewardship &amp; Endowment:</strong> Responsible management of donor reserves to sustain grants.</div>
+                    <div class="sector-item"><strong>4. Credit Restoration &amp; Advocacy:</strong> Free credit education, debt reduction, and consumer advocacy.</div>
+                    <div class="sector-item"><strong>5. Tax Compliance &amp; Structuring:</strong> Legal entity setup, compliance, and sound accounting habits.</div>
                 </div>
             </div>
 
-            <div class="chamber-view" id="chamber-1">
-                <div class="chamber-ornament">✦</div>
-                <span class="chamber-verse-tag">ECCLESIASTES 3:11 &amp; PSALM 27:4</span>
-                <h3>Sacred Beauty &amp; Royal Splendor</h3>
-                <p class="chamber-quote">“He has made everything beautiful in its time... One thing I ask from the Lord: to gaze on the beauty of the Lord and to seek Him in His temple.”</p>
-                <div class="chamber-pillars-row">
-                    <div class="mini-pillar"><strong>EXCELLENCE</strong><span>Craftsmanship worthy of a King</span></div>
-                    <div class="mini-pillar"><strong>HARMONY</strong><span>Order, grace, and majesty</span></div>
+            <div class="sector-view chamber-view" id="sector-1">
+                <h3>Business &amp; Operational Support</h3>
+                <div class="sector-list">
+                    <div class="sector-item"><strong>6. Systems &amp; Automation:</strong> Modern software tools and workflows for small business efficiency.</div>
+                    <div class="sector-item"><strong>7. Marketing, Media &amp; Branding:</strong> Helping local entrepreneurs build professional brands and reach customers.</div>
+                    <div class="sector-item"><strong>8. Real Estate &amp; Development:</strong> Revitalizing neighborhoods and creating affordable commercial spaces.</div>
+                    <div class="sector-item"><strong>9. Governance &amp; Strategic Planning:</strong> Strict legal compliance, independent board oversight, and transparency.</div>
                 </div>
             </div>
 
-            <div class="chamber-view" id="chamber-2">
-                <div class="chamber-ornament">⚔</div>
-                <span class="chamber-verse-tag">DEUTERONOMY 8:18 &amp; PROVERBS 10:22</span>
-                <h3>Covenant Riches &amp; Abundance</h3>
-                <p class="chamber-quote">“The blessing of the Lord brings wealth, without painful toil for it. Remember the Lord your God, for it is He who gives you the ability to produce wealth.”</p>
-                <div class="chamber-pillars-row">
-                    <div class="mini-pillar"><strong>STEWARDSHIP</strong><span>Kingdom wealth with purpose</span></div>
-                    <div class="mini-pillar"><strong>INHERITANCE</strong><span>Blessing generations to come</span></div>
+            <div class="sector-view chamber-view" id="sector-2">
+                <h3>Youth, Wellness &amp; Cultural Restoration</h3>
+                <div class="sector-list">
+                    <div class="sector-item"><strong>10. Youth Legacy &amp; Education:</strong> Financial literacy and entrepreneurship mentorship for the next generation.</div>
+                    <div class="sector-item"><strong>11. Creative Arts &amp; Media:</strong> Uplifting arts, music, and media initiatives that strengthen culture.</div>
+                    <div class="sector-item"><strong>12. Holistic Wellness &amp; Restoration:</strong> Supporting physical, mental, emotional, and spiritual health.</div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="treasury-vault">
-        <div class="vault-frame">
-            <span class="vault-kicker">THE ROYAL TREASURY</span>
-            <h2>Words of Gold &amp; Silver</h2>
-            <p class="vault-sub">Tap below to draw a covenant scripture on wisdom, beauty, and riches.</p>
-
-            <div class="oracle-card" id="oracleDisplay">
-                <p id="oracleText">“A word fitly spoken is like apples of gold in settings of silver.”</p>
-                <span id="oracleRef">PROVERBS 25:11</span>
-            </div>
-
-            <button class="btn-24k" onclick="drawScripture()">Draw Another Treasure ✦</button>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-crown">♛</div>
-        <h3>THE DYNASTY : HOUSE OF PROVIDENCE</h3>
-        <p class="footer-line">HEAVEN’S WEALTH AUTHORITY • GLORY TO GOD ALONE</p>
-    </footer>
-    <div class="modal-overlay" id="sanctuaryModal">
-        <div class="modal-panel">
-            <button class="close-btn" onclick="closeSanctuaryModal()">✕</button>
-            <div class="modal-crown">♛</div>
-            <h3>Enter The Court</h3>
-            <p>Request an audience or private fellowship with House Providence.</p>
-            <form onsubmit="handleCourtSubmit(event)">
-                <input type="text" placeholder="Your Full Name" required>
-                <input type="email" placeholder="Your Email Address" required>
-                <textarea rows="3" placeholder="Your message or inquiry..."></textarea>
-                <button type="submit" class="btn-24k" style="width:100%;">Seal &amp; Send</button>
-            </form>
-            <div id="courtSuccess" class="court-success">✦ Your request has been sealed. Grace and peace to you.</div>
-        </div>
-    </div>
-
-    <script>
-        function loadLogo(event) {
-            const files = event.target.files;
-            if (files && files.length > 0) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const img = document.getElementById('customLogoImg');
-                    const def = document.getElementById('defaultEmblem');
-                    img.src = e.target.result;
-                    img.style.display = 'block';
-                    def.style.display = 'none';
-                };
-                reader.readAsDataURL(files.item(0));
-            }
-        }
-
-        function openChamber(idx, btn) {
-            document.querySelectorAll('.chamber-tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.chamber-view').forEach(v => v.classList.remove('active'));
-            btn.classList.add('active');
-            document.getElementById('chamber-' + idx).classList.add('active');
-        }
-
-        const scriptures = [
-            { text: "“A word fitly spoken is like apples of gold in settings of silver.”", ref: "PROVERBS 25:11" },
-            { text: "“How much better to get wisdom than gold, to get insight rather than silver!”", ref: "PROVERBS 16:16" },
-            { text: "“Worship the Lord in the splendor of His holiness; tremble before Him, all the earth.”", ref: "PSALM 96:9" },
-            { text: "“Wealth and honor come from You; You are the ruler of all things.”", ref: "1 CHRONICLES 29:12" },
-            { text: "“Out of Zion, the perfection of beauty, God shines forth.”", ref: "PSALM 50:2" },
-            { text: "“Honor the Lord with your wealth, with the firstfruits of all your crops; then your barns will be filled to overflowing.”", ref: "PROVERBS 3:9–10" }
-        ];
-        let currentIdx = 0;
-        function drawScripture() {
-            currentIdx = (currentIdx + 1) % scriptures.length;
-            const card = document.getElementById('oracleDisplay');
-            card.style.opacity = 0;
-            setTimeout(() => {
-                document.getElementById('oracleText').innerText = scriptures[currentIdx].text;
-                document.getElementById('oracleRef').innerText = scriptures[currentIdx].ref;
-                card.style.opacity = 1;
-            }, 220);
-        }
-
-        function openSanctuaryModal() { document.getElementById('sanctuaryModal').classList.add('open'); }
-        function closeSanctuaryModal() { document.getElementById('sanctuaryModal').classList.remove('open'); }
-        function handleCourtSubmit(e) {
-            e.preventDefault();
-            e.target.style.display = 'none';
-            document.getElementById('courtSuccess').style.display = 'block';
-        }
-
-        const canvas = document.getElementById('celestialCanvas');
-        const ctx = canvas.getContext('2d');
-        let stars = [];
-        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
-        window.addEventListener('resize', resize);
-        resize();
-
-        for (let i = 0; i < 50; i++) {
-            stars.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                r: Math.random() * 1.8 + 0.4,
-                vy: -(Math.random() * 0.35 + 0.1),
-                a: Math.random() * 0.75 + 0.15
-            });
-        }
-        function animateStars() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            stars.forEach(s => {
-                s.y += s.vy;
-                if (s.y < 0) s.y = canvas.height;
-                ctx.beginPath();
-                ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(243, 212, 122, ${s.a})`;
-                ctx.fill();
-            });
-            requestAnimationFrame(animateStars);
-        }
-        animateStars();
-    </script>
-</body>
-</html>
