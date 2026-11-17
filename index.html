@@ -37,11 +37,133 @@
         </p>
 
         <div class="hero-cta-group">
-            <a href="#chambers" class="btn-24k">Enter The Three Chambers ↓</a>
+            <a href="#overview" class="btn-24k">Explore Our Mission ↓</a>
             <button class="btn-alabaster" onclick="openSanctuaryModal()">Request Audience</button>
         </div>
     </header>
+    <!-- BANK-READY OVERVIEW: WHAT IT IS, WHAT WE DO & HOW IT WORKS -->
+    <section id="overview" class="alabaster-palace" style="border-bottom: 1px solid rgba(197, 150, 56, 0.3);">
+        <div class="palace-header">
+            <span class="section-tag">WHO WE ARE &amp; WHAT WE DO</span>
+            <h2>Empowering Communities. Funding Dreams.</h2>
+            <p><strong>The Dynasty: House of Providence (Dynasty Wealth Systems)</strong> is a Christ-centered nonprofit organization dedicated to economic restoration and community revitalization. Serving as the hands and feet of Jesus, we remove financial barriers by providing <strong>free business education, mentorship, and direct grant and zero-interest micro-loan funding</strong> to help families and entrepreneurs launch, stabilize, and grow thriving businesses.</p>
+        </div>
 
+        <!-- MISSION & VISION -->
+        <div class="chamber-stage overview-card" style="margin-bottom: 2.2rem;">
+            <div class="chamber-pillars-row">
+                <div class="mini-pillar">
+                    <strong>OUR MISSION</strong>
+                    <span>To build wealth and rebuild communities through Christ-centered entrepreneurship, education, and direct financial empowerment.</span>
+                </div>
+                <div class="mini-pillar">
+                    <strong>OUR VISION</strong>
+                    <span>To create thriving local ecosystems where families are restored, poverty is eliminated, and entrepreneurs build lasting legacies.</span>
+                </div>
+            </div>
+
+            <!-- 4-STEP HOW IT WORKS -->
+            <div class="how-it-works-box">
+                <span class="chamber-verse-tag">HOW IT WORKS — EDUCATION BEFORE ELEVATION</span>
+                <h3>From Vision to Funded Business</h3>
+                <div class="steps-row">
+                    <div class="step-item">
+                        <strong>1. Enroll &amp; Learn Free</strong>
+                        <span>Join at zero cost to access foundational courses, business planning templates, and credit-readiness workshops.</span>
+                    </div>
+                    <div class="step-item">
+                        <strong>2. Build Your Blueprint</strong>
+                        <span>Work alongside a dedicated DWS Coach to register your legal entity, establish a budget, and earn certification.</span>
+                    </div>
+                    <div class="step-item">
+                        <strong>3. Receive Seed Capital</strong>
+                        <span>Qualify for <b>$5,000 Launch Grants / 0% Micro-Loans</b> for startup costs and <b>$10,000 Growth Funding</b> to scale.</span>
+                    </div>
+                    <div class="step-item">
+                        <strong>4. Pay It Forward</strong>
+                        <span>Funded founders mentor incoming entrepreneurs while repaid 0% micro-loan principal recycles back into the fund.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THE 12 COMMUNITY & WEALTH SECTORS -->
+        <div class="palace-header" style="margin-top: 3.5rem;">
+            <span class="section-tag">360-DEGREE RESTORATION</span>
+            <h2>The 12 Community &amp; Wealth Sectors</h2>
+            <p>A holistic ecosystem supporting every pillar of financial health, business growth, and community renewal.</p>
+        </div>
+
+        <div class="chamber-selector">
+            <button class="chamber-tab active" onclick="openSector(0, this)">
+                <span class="tab-roman">PILLAR I</span>
+                <span class="tab-name">Financial &amp; Capital</span>
+            </button>
+            <button class="chamber-tab" onclick="openSector(1, this)">
+                <span class="tab-roman">PILLAR II</span>
+                <span class="tab-name">Business Support</span>
+            </button>
+            <button class="chamber-tab" onclick="openSector(2, this)">
+                <span class="tab-roman">PILLAR III</span>
+                <span class="tab-name">Youth &amp; Wellness</span>
+            </button>
+        </div>
+
+        <div class="chamber-stage">
+            <div class="sector-view chamber-view active" id="sector-0">
+                <h3>Financial Literacy &amp; Capital Access</h3>
+                <div class="sector-list">
+                    <div class="sector-item"><strong>1. Community Banking &amp; Capital Access:</strong> Safe wealth storage guidance, financial stewardship, and zero-barrier startup funding.</div>
+                    <div class="sector-item"><strong>2. Financial Education &amp; Protection:</strong> Teaching budgeting, income protection, and retirement readiness.</div>
+                    <div class="sector-item"><strong>3. Capital Stewardship &amp; Endowment:</strong> Responsibly managing donor contributions and reserves to sustain community grants.</div>
+                    <div class="sector-item"><strong>4. Credit Restoration &amp; Consumer Advocacy:</strong> Free credit education, debt-reduction strategies, and consumer advocacy.</div>
+                    <div class="sector-item"><strong>5. Tax Compliance &amp; Business Structuring:</strong> Helping founders legally register entities, stay compliant, and build sound accounting habits.</div>
+                </div>
+            </div>
+
+            <div class="sector-view chamber-view" id="sector-1">
+                <h3>Business &amp; Operational Support</h3>
+                <div class="sector-list">
+                    <div class="sector-item"><strong>6. Systems &amp; Automation:</strong> Modern software tools and automated workflows that help small businesses run efficiently.</div>
+                    <div class="sector-item"><strong>7. Marketing, Media &amp; Branding:</strong> Helping local entrepreneurs build professional brands and reach new customers.</div>
+                    <div class="sector-item"><strong>8. Real Estate &amp; Community Development:</strong> Acquiring and developing property to revitalize neighborhoods and create affordable commercial spaces.</div>
+                    <div class="sector-item"><strong>9. Governance, Policy &amp; Strategic Planning:</strong> Maintaining strict legal compliance, independent board oversight, and transparent leadership.</div>
+                </div>
+            </div>
+
+            <div class="sector-view chamber-view" id="sector-2">
+                <h3>Youth, Wellness &amp; Cultural Restoration</h3>
+                <div class="sector-list">
+                    <div class="sector-item"><strong>10. Youth Legacy &amp; Education:</strong> Delivering financial literacy and entrepreneurship mentorship to the next generation.</div>
+                    <div class="sector-item"><strong>11. Creative Arts &amp; Media:</strong> Supporting uplifting arts, music, and media initiatives that strengthen community culture.</div>
+                    <div class="sector-item"><strong>12. Holistic Wellness &amp; Restoration:</strong> Supporting physical, mental, emotional, and spiritual health alongside financial growth.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WAYS TO GET INVOLVED -->
+        <div class="chamber-stage overview-card" style="margin-top: 2.5rem;">
+            <span class="chamber-verse-tag">JOIN THE MOVEMENT</span>
+            <h3>Ways to Get Involved</h3>
+            <div class="chamber-pillars-row three-col">
+                <div class="mini-pillar">
+                    <strong>ENTREPRENEURS &amp; FAMILIES</strong>
+                    <span>Apply for free business training, credit coaching, and startup grant readiness.</span>
+                </div>
+                <div class="mini-pillar">
+                    <strong>MENTORS &amp; LEADERS</strong>
+                    <span>Join our network of coaches, educators, and community representatives helping local businesses succeed.</span>
+                </div>
+                <div class="mini-pillar">
+                    <strong>DONORS &amp; PARTNERS</strong>
+                    <span>Partner with a transparent, audited 501(c)(3) mission where gifts directly fund neighborhood restoration.</span>
+                </div>
+            </div>
+            <div style="margin-top: 1.6rem;">
+                <button class="btn-24k" onclick="openSanctuaryModal()">Apply or Partner With Us ✦</button>
+            </div>
+        </div>
+    </section>
     <section id="chambers" class="alabaster-palace">
         <div class="palace-header">
             <span class="section-tag">PROVERBS 24:3–4</span>
@@ -99,6 +221,7 @@
             </div>
         </div>
     </section>
+
     <section class="treasury-vault">
         <div class="vault-frame">
             <span class="vault-kicker">THE ROYAL TREASURY</span>
@@ -118,6 +241,7 @@
         <div class="footer-crown">♛</div>
         <h3>THE DYNASTY : HOUSE OF PROVIDENCE</h3>
         <p class="footer-line">HEAVEN’S WEALTH AUTHORITY • GLORY TO GOD ALONE</p>
+        <p class="footer-compliance">Dynasty Wealth Systems / House of Providence is a Christ-centered 501(c)(3) nonprofit initiative dedicated to free financial education, community revitalization, and zero-interest entrepreneurship funding.</p>
     </footer>
 
     <div class="modal-overlay" id="sanctuaryModal">
@@ -135,7 +259,6 @@
             <div id="courtSuccess" class="court-success">✦ Your request has been sealed. Grace and peace to you.</div>
         </div>
     </div>
-
     <script>
         function loadLogo(event) {
             const files = event.target.files;
@@ -152,9 +275,18 @@
             }
         }
 
+        function openSector(idx, btn) {
+            const parent = btn.closest('.alabaster-palace');
+            parent.querySelectorAll('.sector-view').forEach(v => v.classList.remove('active'));
+            btn.parentElement.querySelectorAll('.chamber-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('sector-' + idx).classList.add('active');
+        }
+
         function openChamber(idx, btn) {
-            document.querySelectorAll('.chamber-tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.chamber-view').forEach(v => v.classList.remove('active'));
+            const parent = btn.closest('.alabaster-palace');
+            parent.querySelectorAll('.chamber-view').forEach(v => v.classList.remove('active'));
+            btn.parentElement.querySelectorAll('.chamber-tab').forEach(t => t.classList.remove('active'));
             btn.classList.add('active');
             document.getElementById('chamber-' + idx).classList.add('active');
         }
